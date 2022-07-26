@@ -1,7 +1,50 @@
 .App {
+  display:grid;
+  grid-template-columns: 0.3fr 1fr;
   text-align: center;
+  background: url(./imgs/back3.webp) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 21vw;
+ }
+.firstBox{
+  background-color: #d8d8d8;
+  border-bottom-right-radius: 2vh;
+  width: 22%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+}
+.tope{
+  height: 5vh;
+  /* background-color: #d8d8d8; */
+  backdrop-filter: blur(15px);
+}
+.foto{
+  border-radius: 100%;
+  max-width: 40%;
+  border: solid white 1vh;
+  transition:0.5s;
+  margin-bottom: 0%;
+}
+.foto:hover{
+  box-shadow: 1px 10px 9px 1px;
 }
 
+.nombre{
+  font-size: xx-large;
+  font-family: fantasy;
+}
+.secondBox{
+  width: 60vw;
+
+} 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,7 +69,7 @@
 
 .App-link {
   color: #61dafb;
-}
+} 
 
 @keyframes App-logo-spin {
   from {
@@ -35,4 +78,327 @@
   to {
     transform: rotate(360deg);
   }
+}
+/* ----------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+:root
+{
+  --clr: #222327;
+}
+
+.navigation
+{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation ul
+{
+  display: flex;
+}
+.navigation ul li
+{
+position: relative;
+list-style: none;
+text-decoration: none;
+}
+.a{
+  position:relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.navigation ul li a .icon{
+
+  padding: 0;
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition:0.5s;
+  color: var(--clr);
+  gap:0%;
+}
+
+.navigation ul li:hover a .icon{
+  transform: translateY(-1vh);
+}
+
+.navigation ul li a .text
+{
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  
+  color: var(--clr);
+  font-weight: 400;
+  font-size: 1em;
+  transition: 0.5s;
+  opacity:0;
+  text-decoration: none;
+  margin-top: 0%;
+  text-decoration:none;
+}
+
+.navigation ul li:hover a .text
+{
+opacity:1;
+top:-10vh;
+text-decoration:none;
+}
+
+.leftCard{
+  background-color: rgb(230, 230, 230);
+  margin: 4vh;
+  height: auto;
+  border-radius: 1vh;
+  padding: 1vh;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.titulo{
+  font-size: x-large;
+}
+.alineado{
+  text-align: left;
+}
+
+/* ----------------box2---------------------- */
+.secondBox{
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5vh;
+  gap:1vh;
+  margin-left: 0;
+ 
+}
+
+
+.secondBoxTitle{
+  font-size: xx-large;
+}
+
+.cardTrabajo{
+  background-color: #d8d8d8;
+  width: auto;
+  height: auto;
+  border-radius: 1vh;
+  padding: 2vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+
+
+  margin-bottom: 2vh;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.cardTrabajo:hover {
+  transform: scale(101%);
+}
+
+.codebug_caja{
+  max-width: 40%;
+
+}
+.codebug_image{
+  object-fit: cover;
+  border-radius: 1vh;
+}
+
+.columna_iconos{
+  width: 15vh;
+  height: 15vh;
+  border-radius: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 3vh;
+}
+
+.time{
+  max-width: 20%;
+}
+.linea{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divTextoCardTrabajo{
+  margin: 2vh;
+}
+.tituloCardTrabajo{
+  font-weight: 600;
+}
+.tldec_image{
+  object-fit: cover;
+  border-radius: 1vh;
+}
+.tldec_caja{
+  max-width: 40%;
+}
+
+.columnaAcceso{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color:black;
+  max-width: 30%;
+}
+
+.imgAcceso{
+  max-width: 4vh;
+  min-height: 4vh;
+}
+
+.leftCard2{
+  background-color: rgb(230, 230, 230);
+  margin: 4vh;
+  height: auto;
+  border-radius: 1vh;
+  padding: 1vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.rowLine{
+  display: flex;
+  justify-content: row;
+  gap:2vh;
+  margin-bottom: 2vh;
+}
+.rowLine2{
+  display: flex;
+  justify-content: row;
+  gap:3vh;
+  margin-bottom: 2vh;
+  margin-left: 1vh;
+
+}
+/* ------------FLIP--------------- */
+
+
+.boddy
+{
+  width:100%;
+  height: 35vh;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.card
+{
+  position: relative;
+  width: 90%;
+  height: 200px;
+  transform-style: preserve-3d;
+}
+.card .face
+{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d;
+display: flex;
+justify-content: center;
+align-items: center;
+backface-visibility: hidden;
+transition: 1s ease-in-out;
+transform: perspective(500px) rotateY(0deg);
+}
+
+.card .face.front
+{
+  background: #ff0;
+  border-radius: 2vh;
+}
+.card:hover .face.front{
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card .face.back{
+  background: #000000;
+  border-radius: 2vh;
+  color: rgb(255, 166, 0);
+  line-height: 340%;
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.card:hover .face.back{
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.card .face h2
+{
+  font-size: 2.9em;
+  text-transform: uppercase;
+  transform: perspective(500px) translateZ(85px);
+}
+/* ----------------------------------------- */
+
+.textoIntro{
+  font-weight: 400;
+}
+.tecnologias{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:6vh;
+  margin-top: 4vh;
+  margin-bottom: 2vh;
+}
+.aboutMe{
+  max-width: 95%;
+  margin-top: 2vh;
+}
+.aboutMeText{
+  text-align: left;
+  margin-top: 2vh;
+}
+
+/* ------------------idioma------------- */
+
+.idioma{
+  margin-left: 5vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/* --------------idiomas---------- */
+.size{
+  max-height: 3vw;
+  cursor: pointer;
 }
