@@ -199,6 +199,10 @@ function App() {
               <img src={sql} alt="sql" className='imgAcceso'/>
               <p>SQL</p>
             </a>
+            <a className='columnaAcceso'>
+              <img src={github} alt="github" className='imgAcceso'/>
+              <p>Github</p>
+            </a>
         </div>
 {/* ----------------------IMPLEMENTACIONES------------------------------- */}
         {idioma? (<h3 className='textoIntro'>Algunos de los recursos ya implementados:</h3>) : (<h3 className='textoIntro'>Some already used resourses:</h3>)}
@@ -249,34 +253,30 @@ function App() {
                     <div className='columna_iconos'>
                       <div className='linea'>
                           <img src={time} alt="time" className='time'/>
-                        <p>30 dias</p>
+                        { idioma? (<p>30 dias</p>) : (<p>30 days</p>)}
                       </div>
                       <div className='linea'>
                         <img src={people} alt="people" className='time'/>
-                        <p>8 personas</p>
+                        {idioma? (<p>8 personas</p>) : (<p>8 people</p>)}
                       </div>
                       <div className='linea'>
                         <img src={card} alt="card" className='time'/>
-                        <p>Responsive</p>
+                        {idioma? (<p>Adaptativo</p>) : (<p>Responsive</p>)}
                       </div>
                       <div className='linea'>
                         <img src={share} alt="share" className='time'/>
-                        <p>Deployed</p>
+                        {idioma? (<p>Desplegado</p>):(<p>Deployed</p>)}
                       </div>
                     </div>
                     <div className='divTextoCardTrabajo'>
-                      <p className='tituloCardTrabajo'>
-                        Sitio Web de preguntas y respuestas
-                      </p>
-                      <p className='tituloCardTrabajo'>
-                        entre estudiantes de programación.
-                      </p>
+                      {idioma? (<p className='tituloCardTrabajo'>Sitio Web de preguntas y respuestas</p>):(<p className='tituloCardTrabajo'>Website for questions and answers</p>)}
+                      {idioma? (<p className='tituloCardTrabajo'>entre estudiantes de programación.</p>): (<p className='tituloCardTrabajo'>between programming students.</p>) }
                       <br/>
-                      <p>Mis mayores aportes en su desarroyo fueron:</p>
-                      <p>º Maquetado total del sitio y rutas º Sistema Log-in</p>
-                      <p>º Identidad visual º Animación de Logo-Marca</p>
-                      <p>º Paypal implementado º Cloudinary implementado</p>
-                      <p>º Ayuda general en el área front-end º Video tutorial</p>
+                      {idioma? (<p>Mis mayores aportes en su desarroyo fueron:</p>) : (<p>My greatest contributions in its development were:</p>)}
+                      {idioma? (<p>º Maquetado total del sitio y rutas º Sistema Log-in</p>) : (<p>º Total layout of the site and routes º Log-in System</p>)}
+                      {idioma? (<p>º Identidad visual º Animación de Logo-Marca</p>) : (<p>º Visual identity º Logo-Brand Animation</p>)}
+                      {idioma? (<p>º Paypal implementado º Cloudinary implementado</p>) : (<p>º Paypal implemented º Cloudinary implemented</p>)}
+                      {idioma? (<p>º Ayuda general en el área front-end º Video tutorial</p>) : (<p>º General help in the front-end area º Video tutorial</p>)}
                     </div>
                   </div>
 
@@ -291,11 +291,11 @@ function App() {
                     <div className='columna_iconos'>
                       <div className='linea'>
                           <img src={time} alt="time" className='time'/>
-                        <p>5 meses</p>
+                          {idioma? (<p>5 meses</p>): (<p>5 months</p>)}
                       </div>
                       <div className='linea'>
                         <img src={people} alt="people" className='time'/>
-                        <p>1 persona</p>
+                        {idioma? (<p>1 persona</p>): (<p>Just 1</p>)}
                       </div>
                       <div className='linea'>
                         <img src={youtube} alt="ytb" className='time'/>
@@ -303,25 +303,21 @@ function App() {
                       </div>
                       <div className='linea'>
                         <img src={cash} alt="cash" className='time'/>
-                        <p>Monetiza</p>
+                        {idioma? (<p>Monetiza</p>): (<p>Monetize</p>)}
                       </div>
                     </div>
                     <div className='divTextoCardTrabajo'>
-                      <p className='tituloCardTrabajo'>
-                        Canal en youtube de introducción
-                      </p>
-                      <p className='tituloCardTrabajo'>
-                        al estudio de la programación.
-                      </p>
+                      {idioma? (<p className='tituloCardTrabajo'>Canal en youtube de introducción</p>):(<p className='tituloCardTrabajo'>YouTube channel for introduction to</p>)}
+                      {idioma? (<p className='tituloCardTrabajo'>al estudio de la programación.</p>) : (<p className='tituloCardTrabajo'>the study of programming.</p>)}
                       <br/>
-                      <p>El canal contiene:</p>
-                      <p> º Inclución de estudiantes en grupos de integración-</p>
-                      <p>º Más de 4.000 horas de reproducción </p>
-                      <p>º Más de 2.000 seguidores </p>
-                      <p>º Más de 100 videos disponibles</p>
-                      <p>º Explicaciones detalladas paso a paso</p>
-                      <p>º Conceptos básicos en J.S. </p>
-                      <p>º Canal en constante desarroyo</p>
+                      {idioma? (<p>El canal contiene:</p>) : (<p>The channel contains:</p>)}
+                      {idioma? (<p> º Inclución de estudiantes en grupos de integración-</p>) : (<p> º Inclusion of students in integration groups</p>)}
+                      {idioma? (<p>º Más de 4.000 horas de reproducción </p>) : (<p>º More than 4,000 hours of playback</p>)}
+                      {idioma? (<p>º Más de 2.000 seguidores </p>) : (<p>º More than 2,000 followers</p>)}
+                      {idioma? (<p>º Más de 100 videos disponibles</p>) : (<p>º More than 100 videos available</p>)}
+                      {idioma? (<p>º Explicaciones detalladas paso a paso</p>) : (<p>º Detailed step-by-step explanations</p>)}
+                      {idioma? (<p>º Conceptos básicos en J.S. </p>) : (<p>º Basic concepts in J.S.</p>)}
+                      {idioma? (<p>º Canal en constante desarroyo</p>) : (<p>º Channel in constant development</p>)}
                     </div>
                   </div>
 
@@ -335,68 +331,60 @@ function App() {
                     <div className='columna_iconos'>
                       <div className='linea'>
                           <img src={time} alt="time" className='time'/>
-                        <p>5 meses</p>
+                        {idioma? (<p>5 meses</p>):(<p>5 months</p>)}
                       </div>
                       <div className='linea'>
                         <img src={people} alt="people" className='time'/>
-                        <p>1 persona</p>
+                        {idioma? (<p>1 persona</p>):(<p>just 1</p>)}
                       </div>
                       <div className='linea'>
                         <img src={curso} alt="curso" className='time'/>
-                        <p>Curso</p>
+                        {idioma? (<p>Curso</p>):(<p>Course</p>)}
                       </div>
                       <div className='linea'>
                         <img src={check} alt="cash" className='time'/>
-                        <p>Completo</p>
+                        {idioma? (<p>Completo</p>):(<p>Complete</p>)}
                       </div>
                     </div>
                     <div className='divTextoCardTrabajo'>
-                      <p className='tituloCardTrabajo'>
-                        Curso concluido Full-Stack Developer
-                      </p>
-                      <p className='tituloCardTrabajo'>
-                        Henry
-                      </p>
+                      {idioma? (<p className='tituloCardTrabajo'>Curso concluido Full-Stack Developer</p>):(<p className='tituloCardTrabajo'>Completed course Full-Stack Developer</p>)}
+                      <p className='tituloCardTrabajo'>Henry</p>
                       <br/>
-                      <p>El curso fue realizado en modalidad full time.</p>
-                      <p> º Tecnologias: JS, HTML, Node, CSS, React, Redux, SQL</p>
-                      <p>º Trabajo de "Teaching Assistant" durante el curso </p>
-                      <p>º Asistencia Completa </p>
-                      <p>º Más de 800 horas de curso</p>
-                      <p>º Equipos de trabajo conformados</p>
-                      <p>º Realización de trabajo individual full-stack</p>
-                      <p>º Realización de trabajo grupal full-stack</p>
+                      {idioma? (<p>El curso fue realizado en modalidad full time.</p>):(<p>The course was conducted in full time mode.</p>)}
+                      {idioma? (<p> º Tecnologias: JS, HTML, Node, CSS, React, Redux, SQL</p>):(<p> º Technologies: JS, HTML, Node, CSS, React, Redux, SQL</p>)}
+                      {idioma? (<p>º Trabajo de "Teaching Assistant" durante el curso </p>):(<p>º Work as "Teaching Assistant" during the course</p>)}
+                      {idioma? (<p>º Asistencia Completa </p>):(<p>º Full Assistance </p>)}
+                      {idioma? (<p>º Más de 800 horas de curso</p>):(<p>º More than 800 course hours</p>)}
+                      {idioma? (<p>º Equipos de trabajo conformados</p>):(<p>º Work teams formed</p>)}
+                      {idioma? (<p>º Realización de trabajo individual full-stack</p>):(<p>º Realization of full-stack individual work</p>)}
+                      {idioma? (<p>º Realización de trabajo grupal full-stack</p>):(<p>º Realization of full-stack group work</p>)}
                     </div>
                   </div>
 
                   {/* ------------------ABOUT ME------------------ */}
                   <div className='aboutMe'>
                     { idioma ? (<h2>Acerca de mi:</h2>) : (<h2>About me:</h2>)}
-                    <p className='aboutMeText'>
+                    { idioma ? (<p className='aboutMeText'>Soy una persona comunicativa y conciliadora. Disfruto de la oratoria frente a muchas personas y sobre todo de poder enseñar y o transmitir ideas con la mayor claresa posible. Me dediqué por muchos años a la producción audiovisual. Mis mejores logros  fueron en la creación logomarcas animadas como en retoques fotográficos y soluciones multimedia en general.</p>): (<p className='aboutMeText'>I am a communicative and conciliatory person. I enjoy speaking in front of many people and above all being able to teach and/or transmit ideas as clearly as possible. I dedicated myself for many years to audiovisual production. My best achievements were in the creation of animated logos as well as in photographic retouching and multimedia solutions in general.</p>)}
 
-                        Soy una persona comunicativa y conciliadora. Disfruto de la oratoria frente a muchas personas y sobre todo de poder enseñar y o transmitir ideas con la mayor claresa posible.
+                        {idioma? (<p className='aboutMeText'>Éste último año (2022) me eh dedicado enteramente a la programación. Al principio comencé a estudiar por mi cuenta utilizando cursos online. Luego de un tiempo decidí ingresar al curso ofrecido por Henry.
 
-                        Me dediqué por muchos años a la producción audiovisual. Mis mejores logros  fueron en la creación logomarcas animadas como en retoques fotográficos y soluciones multimedia en general.</p>
+                          Sin dejar de lado la humildad, estoy orgulloso al poder afirmar que me encuentro capacitado para aprender por mi cuenta nuevas tecnologías y además puedo conciderarme una pieza fundamental en el futuro de su empresa.</p>):(<p className='aboutMeText'>This last year (2022) I have dedicated myself entirely to programming. At first I started studying on my own using online courses. After a while I decided to join the course offered by Henry.
 
-                        <p className='aboutMeText'>Éste último año (2022) me eh dedicado enteramente a la programación. Al principio comencé a estudiar por mi cuenta utilizando cursos online. Luego de un tiempo decidí ingresar al curso ofrecido por Henry.
+                          Without neglecting humility, I am proud to say that I am able to learn new technologies on my own and I can also consider myself a fundamental piece in the future of your company.</p>)}
+                        {idioma? (<p className='aboutMeText'>Mis puntos más fuertes son:</p>):(<p className='aboutMeText'>My strongest points are:</p>)}
 
-                        Sin dejar de lado la humildad, estoy orgulloso al poder afirmar que me encuentro capacitado para aprender por mi cuenta nuevas tecnologías y además puedo conciderarme una pieza fundamental en el futuro de su empresa.</p>
-                        <p className='aboutMeText'>
-                        Mis puntos más fuertes son:</p>
+                        {idioma? (<p className='aboutMeText'>º Capacidad de organización y liderazgo como  par. Disfruto motivar a un equipo recordándoles a sus integrantes lo valiosos que son y lo buenos que son haciendo sus trabajos.</p>):(<p className='aboutMeText'>º Capacity for organization and leadership as a peer. I enjoy motivating a team by reminding them how valuable they are and how good they are at their jobs.</p>)}
+                        {idioma? (<p className='aboutMeText'>º Facilidad para comenzar proyectos desde cero. Apesar de no tener mucha experiencia en el diseño visual web, puedo planificar la estructura necesaria de un sitio para que el usuario final lo persiva orgánico y de facil manipulación.</p>):(<p className='aboutMeText'>º Easy to start projects from scratch. Despite not having much experience in visual web design, I can plan the necessary structure of a site so that the end user perceives it organically and easily.</p>)}
+                        {idioma? (<p className='aboutMeText'>º Tengo mucha paciencia y facilidad para transmitir ideas, enseñar y entender que pequeños detalles en la comunicación hacen toda la diferencia.
+                        Mi posición ideal en una empresa sería poder ayudar a las personas nuevas a adaptarse a sus puestos laborales de manera técnica y social.</p>):(<p className='aboutMeText'>º I have a lot of patience and ability to transmit ideas, teach and understand that small details in communication make all the difference.
+                        My ideal position in a company would be to be able to help new people adapt to their jobs in a technical and social way.</p>)}
+                        {idioma? (<p className='aboutMeText'>º Actualmente creo contenido de interés en Youtube ayudando iniciantes en programación mediante mi canal: www.youtube.com/telodigoencodigo
+                        Ayudar se siente muy bien.</p>):(<p className='aboutMeText'>º I currently create content of interest on YouTube helping beginners in programming through my channel: www.youtube.com/telodigoencodigo
+                        Helping feels great.</p>)}
 
-                        <p className='aboutMeText'>
-                        º Capacidad de organización y liderazgo como  par. Disfruto motivar a un equipo recordándoles a sus integrantes lo valiosos que son y lo buenos que son haciendo sus trabajos.</p>
-                        <p className='aboutMeText'>
-                        º Facilidad para comenzar proyectos desde cero. Apesar de no tener mucha experiencia en el diseño visual web, puedo planificar la estructura necesaria de un sitio para que el usuario final lo persiva orgánico y de facil manipulación.</p>
-                        <p className='aboutMeText'>
-                        º Tengo mucha paciencia y facilidad para transmitir ideas, enseñar y entender que pequeños detalles en la comunicación hacen toda la diferencia.
-                        Mi posición ideal en una empresa sería poder ayudar a las personas nuevas a adaptarse a sus puestos laborales de manera técnica y social.</p>
-                        <p className='aboutMeText'>
-                        º Actualmente creo contenido de interés en Youtube ayudando iniciantes en programación mediante mi canal: www.youtube.com/telodigoencodigo
-                        Ayudar se siente muy bien.</p>
-                        <p className='aboutMeText'>
-                        Si llegaste hasta este punto de mis detalles, te estoy muy agradecido por tu tiempo. Espero pronto formar parte de tu equipo de trabajo.
-                    </p>
+                        {idioma? (<p className='aboutMeText'>º Puedo comunicarme en Ingles Nivel C1 , Portugues nativo y Español Nativo</p>):(<p className='aboutMeText'>º ºI can communicate in English Level C1 , Portugues native and Spanish Native</p>)}
+
+                        {idioma? (<p className='aboutMeText'>Si llegaste hasta este punto de mis detalles, te estoy muy agradecido por tu tiempo. Espero pronto formar parte de tu equipo de trabajo.</p>):(<p className='aboutMeText'>If you got to this point in my details, I'm very grateful for your time. I hope to be part of your team soon.</p>)}
                   </div>
 
                   
